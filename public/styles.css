@@ -1,0 +1,245 @@
+Skip to content
+ 
+Search…
+All gists
+Back to GitHub
+Sign in
+Sign up
+Instantly share code, notes, and snippets.
+
+@diego3g
+diego3g/styles.css
+Created 4 years ago
+18
+2
+ Code
+ Revisions 1
+ Stars 18
+ Forks 2
+<script src="https://gist.github.com/diego3g/a3b8dc290750e928eb05e33a26670a0a.js"></script>
+styles.css
+html, body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#chat {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 600px;
+  border: 1px solid #ddd;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+button {
+  width: 600px;
+  height: 50px;
+  font-size: 14px;
+  background: #069;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 10px;
+}
+
+.messages {
+  width: 600px;
+  height: 400px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+@jefersongpx88
+jefersongpx88 commented on 23 Sep 2018
+d
+
+@polimpo4
+polimpo4 commented on 21 Oct 2018
+2 problemas basicos dessa sua app...
+
+Apesar De Cada Client Receber Um Id Unico... Qualquer Client Pode Usar O Mesmo "Author".
+Não Tem Um TimeOut Para Limpar As Mensagens O Que Provocará Um Sobre Carregamento De Dados Na Pagina Quando Varias Mensagens Ficarem Alojadas Em Memoria.
+
+Possiveis Soluções:
+
+Criar Sistema De Registo Para Cada Usuário. Podendo Assim Cada Client Interagir Entre Outros Em Privado, Melhor Controlo De Clients Para Evitar Infrigir Algumas Regras(Racismo, Preconceitos, Comportamentos Desviantes, etc.) Assim Podendo Dar Kick Do Chat/Ban Ou Ainda Um Poder Extra Para Admins/Moderadores.
+
+Criar Um Registo De Tempo Para Cada Mensagem Para Melhor Registo E Leitura Do Client E Para Auto Deletar-se Com Com Um Timeout Em 24 Evitando Assim Deletar Todas As Mensagens De Uma Vez Só E Criar Um App De Chat Automatizado E Dinamicamente Controlado.
+
+@marlonbrito-zz
+marlonbrito-zz commented on 11 Mar 2020
+2 problemas basicos dessa sua app...
+
+Apesar De Cada Client Receber Um Id Unico... Qualquer Client Pode Usar O Mesmo "Author".
+Não Tem Um TimeOut Para Limpar As Mensagens O Que Provocará Um Sobre Carregamento De Dados Na Pagina Quando Varias Mensagens Ficarem Alojadas Em Memoria.
+
+Possiveis Soluções:
+
+Criar Sistema De Registo Para Cada Usuário. Podendo Assim Cada Client Interagir Entre Outros Em Privado, Melhor Controlo De Clients Para Evitar Infrigir Algumas Regras(Racismo, Preconceitos, Comportamentos Desviantes, etc.) Assim Podendo Dar Kick Do Chat/Ban Ou Ainda Um Poder Extra Para Admins/Moderadores.
+Criar Um Registo De Tempo Para Cada Mensagem Para Melhor Registo E Leitura Do Client E Para Auto Deletar-se Com Com Um Timeout Em 24 Evitando Assim Deletar Todas As Mensagens De Uma Vez Só E Criar Um App De Chat Automatizado E Dinamicamente Contr
+projeto criado apenas para demonstrar uso de socket
+https://www.youtube.com/watch?v=-jXfKDYJJvo
+
+@ElderSam
+ElderSam commented on 9 Apr 2020
+2 problemas basicos dessa sua app...
+
+Apesar De Cada Client Receber Um Id Unico... Qualquer Client Pode Usar O Mesmo "Author".
+Não Tem Um TimeOut Para Limpar As Mensagens O Que Provocará Um Sobre Carregamento De Dados Na Pagina Quando Varias Mensagens Ficarem Alojadas Em Memoria.
+
+Possiveis Soluções:
+
+Criar Sistema De Registo Para Cada Usuário. Podendo Assim Cada Client Interagir Entre Outros Em Privado, Melhor Controlo De Clients Para Evitar Infrigir Algumas Regras(Racismo, Preconceitos, Comportamentos Desviantes, etc.) Assim Podendo Dar Kick Do Chat/Ban Ou Ainda Um Poder Extra Para Admins/Moderadores.
+Criar Um Registo De Tempo Para Cada Mensagem Para Melhor Registo E Leitura Do Client E Para Auto Deletar-se Com Com Um Timeout Em 24 Evitando Assim Deletar Todas As Mensagens De Uma Vez Só E Criar Um App De Chat Automatizado E Dinamicamente Controlado.
+Boas observações, embora ele só fez de forma simples para mostrar realmente de forma rápida como funciona o WebSocket. Mas eu vou considerar essas melhorias e implementar no meu chat.
+
+@jvpiovezan
+jvpiovezan commented on 6 Dec 2020
+estilo responsivo:
+
+html, body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#chat {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+input {
+  width: 60vw;
+  border: 1px solid #ddd;
+  height: 5vw;
+  padding: 0 2vw;
+  font-size: 1.5vw;
+}
+
+button {
+  width: 60vw;
+  height: 5vw;
+  font-size: 1.5vw;
+  background: #069;
+  text-align: center;
+  line-height: 5vw;
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 1vw;
+  border: none;
+}
+
+.messages {
+  width: 60vw;
+  height: 40vw;
+  margin: 2vw 0;
+  border: 1px solid #ddd;
+  padding: 2vw;
+}
+@eduardosoareszup
+eduardosoareszup commented on 8 Jul 2021
+estilo responsivo:
+
+html, body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#chat {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+input {
+  width: 60vw;
+  border: 1px solid #ddd;
+  height: 5vw;
+  padding: 0 2vw;
+  font-size: 1.5vw;
+}
+
+button {
+  width: 60vw;
+  height: 5vw;
+  font-size: 1.5vw;
+  background: #069;
+  text-align: center;
+  line-height: 5vw;
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 1vw;
+  border: none;
+}
+
+.messages {
+  width: 60vw;
+  height: 40vw;
+  margin: 2vw 0;
+  border: 1px solid #ddd;
+  padding: 2vw;
+}
+Eu adicionei ao seu código
+
+@media screen and (max-width: 990px) {
+  input,
+  button,
+  .messages {
+    width: 90%;
+  }
+
+  input,
+  button {
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .messages {
+    height: 60%;
+  }
+}
+E deu uma melhorada para celulares, eu estava achando muito pequeno as coisas.
+
+ to join this conversation on GitHub. Already have an account? Sign in to comment
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
